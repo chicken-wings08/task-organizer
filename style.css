@@ -1,16 +1,21 @@
 html, body {
-    background: linear-gradient( #1d1d1d 30%, #353535 80%);
+    /* background: linear-gradient( #1d1d1d 30%, #353535 80%); */
+    background: #1d1d1d;
     background-attachment: fixed;
     color: white;
     margin: 0;
     padding: 0;
     height: 100%;    
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;  
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-variation-settings:
         "width" 100;
+}
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -51,6 +56,8 @@ main {
     border: 1px solid #444;
     font-size: 26px;
     position: relative;
+    animation: float 3s ease-in-out infinite;
+    box-shadow: 0px 0px 10px #f44336;
 }
 
 .task-row {
@@ -60,6 +67,13 @@ main {
     position: relative;
     width: 100%;
 }
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
 
 .editable-task {
     cursor: pointer;
@@ -139,4 +153,10 @@ main {
 .delete-btn {
     background-color: #f44336;
     color: white;
+}
+
+/*  */
+.ghost {
+    opacity: 0.4;
+    background-color: #ffffff;
 }

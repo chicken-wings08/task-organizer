@@ -22,25 +22,7 @@
         </div>
         </section>
         <section class="todo-container">
-            <ul class="task-list">
-                <!-- <li>
-                    <div class="task-row">
-                        <span class="editable-task">Sample Task 1</span>
-                        <div class="task-actions">
-                            <button class="done-btn">✓</button>
-                            <button class="delete-btn">✕</button>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="task-row">
-                        <span class="editable-task">Sample Task 1</span>
-                        <div class="task-actions">
-                            <button class="done-btn">✓</button>
-                            <button class="delete-btn">✕</button>
-                        </div>
-                    </div>
-                </li> -->
+            <ul id="tasklist" class="task-list">
                 <li class="no-task">
                     <p>You have no task..</p>
                 </li>
@@ -49,5 +31,7 @@
 
     </main>
     <script src="script.js"></script>
+    <!-- jsDelivr :: Sortable :: Latest (https://www.jsdelivr.com/package/npm/sortablejs) -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 </body>
 </html>
